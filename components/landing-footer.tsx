@@ -4,6 +4,7 @@ import { Montserrat } from "next/font/google";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
+import { menus } from "@/landing-constants";
 
 const font = Montserrat({ weight: "600", subsets: ["latin"] });
 
@@ -22,18 +23,11 @@ export const LandingFooter = () => {
         </Link>
         <div className={cn("text-sm font-bold text-white", font.className)}>
           <div className="flex flex-row p-2 gap-6 items-baseline">
-            <Link href="#home" className={underline_effect}>
-              <span className="group-hover:after:w-full">Home</span>
-            </Link>
-            <Link href="#features" className={underline_effect}>
-              <span className="group-hover:after:w-full">Features</span>
-            </Link>
-            <Link href="#faq" className={underline_effect}>
-              <span className="group-hover:after:w-full">FAQ's</span>
-            </Link>
-            <Link href="#contactus" className={underline_effect}>
-              <span className="group-hover:after:w-full">Contact Us</span>
-            </Link>
+            {menus.map((menu) => (
+              <Link key={menu.href} href={menu.href}>
+                <span>{menu.label}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
