@@ -20,8 +20,7 @@ const testimonials = [
     name: "Vikram",
     avatar: "V",
     title: "CEO",
-    description:
-      "Life mein bohot asaan kar diya, yaar! Can't work without it now!",
+    description: "Life bohot asaan kar diya, yaar! Can't work without it now!",
   },
   {
     name: "Meera",
@@ -34,7 +33,7 @@ const testimonials = [
 
 export const LandingContent = () => {
   return (
-    <div className="px-10 pb-20">
+    <div className="px-10 pb-20" id="testonomials">
       <h2 className="text-center text-4xl text-white font-extrabold mb-10">
         Testimonials
       </h2>
