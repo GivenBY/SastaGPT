@@ -1,23 +1,20 @@
 "use client";
 
 import { Montserrat } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
-import { useAuth } from "@clerk/nextjs";
 
 import { cn } from "@/lib/utils";
 
 const font = Montserrat({ weight: "600", subsets: ["latin"] });
 
 export const LandingFooter = () => {
-  const { isSignedIn } = useAuth();
   const underline_effect = cn(
     "relative inline-block group after:bg-blue-500 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
   );
 
   return (
     <footer className="p-4">
-      <div className="pt-4 flex bg-transparent items-center justify-between ">
+      <div className="pt-4 hidden md:flex bg-transparent items-center justify-between ">
         <Link href="/" className="flex items-center">
           <h1 className={cn("text-2xl font-bold text-white", font.className)}>
             SastaGPT
@@ -45,7 +42,7 @@ export const LandingFooter = () => {
         © 2023 <Link href="/">SastaGPT</Link>. Created with ❤️ by{" "}
         <Link
           href="https://github.com/GivenBY"
-          className="underline text-gray-100 cursor-pointer"
+          className="underline text-gray-100 cursor-pointer block md:inline-block"
         >
           Suryakant Upadhyay
         </Link>
