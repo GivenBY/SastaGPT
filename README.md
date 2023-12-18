@@ -53,7 +53,7 @@ npm install
 
 ## 3. Configure Environment Variables:
 
-- Create a .env.local file in the root directory and add the necessary environment variables. Refer to the provided .env.example for required configurations.
+- Create a `.env` renaming `.env.example` file in the root directory and add the necessary environment variables. Refer to the provided .env.example for required configurations.
 
 ## 4. Run the Application:
 
@@ -65,7 +65,7 @@ The application will be accessible at http://localhost:3000.
 
 ## 5. Configuration
 
-Customize SastaGPT by adjusting the configuration parameters in the .env.local file. This includes API keys, endpoints, and other settings specific to the integrated AI services.
+Customize SastaGPT by adjusting the configuration parameters in the `.env` file. This includes API keys, endpoints, and other settings specific to the integrated AI services.
 
 ## Contributing
 
