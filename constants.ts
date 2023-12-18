@@ -1,4 +1,11 @@
-import { Code, ImageIcon, MessageSquare, Music, VideoIcon } from "lucide-react";
+import {
+  Code,
+  ImageIcon,
+  MessageSquare,
+  Music,
+  VideoIcon,
+  Settings,
+} from "lucide-react";
 
 export const MAX_FREE_COUNTS = 100;
 
@@ -37,5 +44,12 @@ export const tools = [
     color: "text-green-700",
     bgColor: "bg-green-700/10",
     href: "/code",
+  },
+  {
+    label: "Settings",
+    icon: Settings,
+    color: "text-blue-700",
+    bgColor: "bg-blue-700/10",
+    href: "/settings",
   },
 ];
